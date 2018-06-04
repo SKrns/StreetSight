@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>StreetSight</title>
+
+    <style media="screen">
+      .rectangle{
+        margin: auto;
+        width: 66%;
+        background-color: #ffffff;
+      }
+      #body{
+        background-color: pink;
+      }
+      #header{
+        background-color: #ffffff;
+      }
+      .jumbotron{
+        width: 66%;
+        margin: auto;
+      }
+      .navbar-default{
+        width: 66%;
+        margin: auto;
+      }
+      .thumbnail{
+        width: 100%;
+      }
+      .row{
+        margin: auto;
+        display: inline;
+      }
+      a:link{
+        color: black;
+        text-decoration: none;
+      }
+      a:visited{
+        color: black;
+        text-decoration: none;
+      }
+      a:hover{
+        color: black;
+        text-decoration: none;
+      }
+      #tn1{
+
+      }
+      #tn2{
+
+      }
+      #tn3{
+
+      }
+      #tn4{
+
+      }
+    </style>
+
+    <link href="../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body id="body">
+    <div class="rectangle">
+      <header>
+        <div class="jumbotron" id="header" style="color: black">
+          <h1>Welcome!</h1>
+          <p style="word-break: keep-all">StreetSight에 오신 것을 환영합니다.</p>
+        </div>
+      </header>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./main">Main</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="./maps">statistics</a></li>
+              <li><a href="./achives">Achievements</a></li>
+              <li><a href="./introduce">Introduce StreetSight</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./support">Support</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+
+                  <li><a href="/logout">logout</a></li>
+                  <li><a href="#">My Profile</a></li>
+                  <li class="divider"></li>
+                  <li><a href="https://www.dimigo.hs.kr/">dimigo.hs.kr</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <article>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4">
+            <div class="thumbnail" id="tn1">
+              <a href="./maps" class="img"><img src="../public/web/maps_icon.png" width="242" alt="Maps"></a>
+              <div class="caption">
+                <a href="./maps"><h3 class="text-center">View statistics</h3></a>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail" id="tn2">
+            <a href="./achives" class="img"><img src="../public/web/achievements_icon.png" width="242" alt="Achievements"></a>
+            <div class="caption">
+              <a href="./achives"><h3 class="text-center">Your Achievements</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-2 col-md-4">
+          <div class="thumbnail" id="tn3">
+            <a href="./introduce" class="img"><img src="../public/web/introduction_icon.png" width="242" alt="Introduction"></a>
+            <div class="caption">
+              <a href="./introduce"><h3 class="text-center">Introduce StreetSight</h3></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail" id="tn4">
+            <a href="./support" class="img"><img src="../public/web/support_icon.png" width="242" alt="Introduction"></a>
+            <div class="caption">
+              <a href="./support"><h3 class="text-center">Additional Support</h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <br><br><br><br>
+      </article>
+
+      <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../public/js/bootstrap.min.js"></script>
+      </footer>
+    </div>
+
+  </body>
+</html>

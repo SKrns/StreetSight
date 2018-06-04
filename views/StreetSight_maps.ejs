@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <title>Maps : StreetSight</title>
+
+    <style media="screen">
+      #rectangle{
+        margin: auto;
+        width: 66%;
+        background-color: #ffffff;
+      }
+      #body{
+        background-color: pink;
+      }
+      #header{
+        background-color: #ffffff;
+      }
+      #jumbotron{
+        background-color: #ffffff;
+      }
+      .jumbotron{
+        width: 66%;
+        margin: auto;
+      }
+      .navbar-default{
+        width: 66%;
+        margin: auto;
+      }
+      #label {
+        border-style: double;
+        border-color: black;
+        background-color: white;
+        height: 40px;
+      }
+      #label1 {
+        border-style: double;
+        border-color: black;
+        background-color: rgb(231, 231, 231);
+        height: 40px;
+      }
+      #label2 {
+        border-style: double;
+        border-color: black;
+        background-color: rgb(231, 231, 231);
+        height: 40px;
+      }
+      #map-view{
+        width: 66%;
+        height: 500px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    </style>
+
+    <link href="../public/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body id="body" onload="initialize()">
+    <div id="rectangle">
+      <header>
+        <div class="jumbotron" id="header" style="color: black">
+          <h1>Maps</h1>
+          <p style="word-break: keep-all">StreetSight 사용자의 걸음 패턴, 경로 등을 지도에 표시합니다.</p>
+        </div>
+      </header>
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./main">Main</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="./maps">statistics</a></li>
+              <li><a href="./achives">Achievements</a></li>
+              <li><a href="./introduce">Introduce StreetSight</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./support">Support</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Community<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Bulletin</a></li>
+                  <li><a href="#">Upload</a></li>
+                  <li><a href="#">My Profile</a></li>
+                  <li class="divider"></li>
+                  <li><a href="https://www.dimigo.hs.kr/">dimigo.hs.kr</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <article>
+        <p>
+          <br>
+          <h2 class="text-center" style="word-break: keep-all">statistics<br><small>최근 충돌 통계임.</small></h2>
+        </p>
+
+        <div style="padding-right: 10%; padding-left: 10%">
+          <div class="col-md-offset-2 col-md-4" id="label1">
+            <h4 class="text-center" style="word-break: keep all">오늘 충돌 횟수</h4>
+          </div>
+          <div class="col-md-4" id="label">3</div>
+          <div class="col-md-offset-2 col-md-4" id="label2">
+            <h4 class="text-center" style="word-break: keep all">주간 충돌 횟수</h4>
+          </div>
+          <div class="col-md-4" id="label">3</div>
+        </div>
+      </article>
+      <br><br><br><br><br><br>
+      <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../public/js/bootstrap.min.js"></script>
+      </footer>
+    </div>
+  </body>
+</html>
